@@ -1,18 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Text;
 
-namespace ConsoleTest
+namespace Codility.Arrays
 {
-    class Program
+    public class OddOccurrencesInArray
     {
-        static void Main(string[] args)
+        public int Solution(int[] A)
         {
-            var A = new int[] { 9,3,9,3,9,7,9 };
-
             var totalCountDict = new Dictionary<int, int>();
-
-            var result = 0;
 
             for (int i = 0; i < A.Length; i++)
             {
@@ -29,12 +25,12 @@ namespace ConsoleTest
             {
                 if (item.Value % 2 == 1)
                 {
-                    result = item.Key;
-                    break;
+                    return item.Key;
+                   
                 }
             }
 
-
+            return 0;
         }
     }
 }
