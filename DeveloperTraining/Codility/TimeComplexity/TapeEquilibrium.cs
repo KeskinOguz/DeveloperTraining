@@ -1,21 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
-namespace ConsoleTest
+namespace Codility.TimeComplexity
 {
-    class Program
+    public class TapeEquilibrium
     {
-        static void Main(string[] args)
-        {
-            var arr = new int[] { 3,1 };
-            var result = solution(arr);
-            Console.WriteLine(result.ToString());
-            Console.ReadKey();
-
-        }
-
-        public static int solution(int[] A)
+        public static int Solution(int[] A)
         {
             var result = int.MaxValue;
             var total = A.Sum(x => x);

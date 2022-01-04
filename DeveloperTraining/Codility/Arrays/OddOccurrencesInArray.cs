@@ -6,7 +6,7 @@ namespace Codility.Arrays
 {
     public class OddOccurrencesInArray
     {
-        public int Solution(int[] A)
+        public  static int Solution(int[] A)
         {
             var totalCountDict = new Dictionary<int, int>();
 
