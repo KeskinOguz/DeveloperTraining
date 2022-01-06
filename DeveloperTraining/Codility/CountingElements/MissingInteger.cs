@@ -1,21 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Text;
 
-namespace ConsoleTest
+namespace Codility.CountingElements
 {
-    class Program
+    public class MissingInteger
     {
-        static void Main(string[] args)
-        {
-            var arr = new int[] { -1, -3 };
-            var result = solution(arr);
-            Console.WriteLine(string.Join(',', result));
-            Console.ReadKey();
-
-        }
-
-        public static int solution(int[] A)
+        public static int Solution(int[] A)
         {
             var spi = 1;
 
